@@ -32,4 +32,5 @@ app.get("/", (req, res) => {
 
 app.listen(4000, () => {
     console.log(`Server is running on port ${process.env.PORT} in ${process.env.NODE_ENV} mode`);
+    console.log(`Allowed access for ${process.env.FRONTEND_URL}`)
 })
